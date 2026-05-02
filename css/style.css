@@ -54,3 +54,11 @@ body {
   padding: 30px 40px;
   flex: 1; /* takes up remaining space */
 }
+
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
