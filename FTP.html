@@ -4,11 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="sidebar">
+  <h2>Terms</h2>
+  <nav>
+    <a href="WWW.html">World Wide Web</a>
+    <a href="TCPIP.html">TCP/IP</a>
+    <a href="Browsers.html">Web Browsers</a>
+    <a href="WebServers.html">Web Servers</a>
+    <a href="URLs.html">URLs</a>
+    <a href="DNS.html">Domain Name Server</a>
+    <a href="HTTP.html">HTTP</a>
+    <a href="Intranet.html">Intranet</a>
+    <a href="Extranet.html">Extranet</a>
+    <a href="MultitierArchitecture.html">Multitier Architecture</a>
+    <a href="FTP.html">File Transfer Protocol</a>
+    <a href="HTML.html">HTML</a>
+    <a href="WebVersions.html">Web Versions</a>
+  </nav>
+</div>
     <h1>File Transfer Protocol (FTP)</h1>
     <br>
     <p>FTP (File Transfer Protocol) is a standard network protocol used for the transfer of computer files between a client and server on a computer network.</p>
     <p><img src="images/FTP.jpg" alt="FTP"></p>
+    <script>
+  const links = document.querySelectorAll('.sidebar nav a');
+  links.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add('active');
+    }
+  });
+</script>
 </body>
 </html>

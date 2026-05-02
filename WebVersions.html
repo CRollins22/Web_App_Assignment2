@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="sidebar">
+  <h2>Terms</h2>
+  <nav>
+    <a href="WWW.html">World Wide Web</a>
+    <a href="TCPIP.html">TCP/IP</a>
+    <a href="Browsers.html">Web Browsers</a>
+    <a href="WebServers.html">Web Servers</a>
+    <a href="URLs.html">URLs</a>
+    <a href="DNS.html">Domain Name Server</a>
+    <a href="HTTP.html">HTTP</a>
+    <a href="Intranet.html">Intranet</a>
+    <a href="Extranet.html">Extranet</a>
+    <a href="MultitierArchitecture.html">Multitier Architecture</a>
+    <a href="FTP.html">File Transfer Protocol</a>
+    <a href="HTML.html">HTML</a>
+    <a href="WebVersions.html">Web Versions</a>
+  </nav>
+</div>
     <h1>Web Versions</h1>
     <br>
     <p>Web versions refer to the different iterations and advancements of the World Wide Web over time. The web has evolved through various stages, each introducing new features and capabilities.</p>
@@ -21,5 +40,13 @@
     <h2>Web 4.0</h2>
     <p>Web 4.0, also known as the "symbiotic web," is a speculative concept that envisions a future where humans and machines coexist and collaborate seamlessly. It is expected to involve advanced technologies such as augmented reality, virtual reality, and brain-computer interfaces, allowing for immersive and interactive experiences.</p>
     <img src="images/Web4.jpg" alt="Web 4.0">
+    <script>
+  const links = document.querySelectorAll('.sidebar nav a');
+  links.forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add('active');
+    }
+  });
+</script>
 </body>
 </html>
