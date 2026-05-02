@@ -28,42 +28,41 @@ body {
 
 .sidebar h2 {
   color: #fff;
-  font-size: 14px;
-  letter-spacing: 2px;
+  font-size: 13px;
+  letter-spacing: 3px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
 }
 
 .sidebar nav {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 
 .sidebar nav a {
-  color: #aaa;
+  color: rgba(255,255,255,0.85);
   text-decoration: none;
-  font-size: 14px;
-  padding: 8px 10px;
-  border-radius: 4px;
-  transition: background 0.2s, color 0.2s;
+  font-size: 13px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
 }
 
 .sidebar nav a:hover {
-  background-color: #2a2a4a;
+  background: rgba(255,255,255,0.2);
   color: #fff;
+  transform: translateX(4px);
 }
 
 .sidebar nav a.active {
-  background-color: #4af0c4;
-  color: #000;
-  font-weight: bold;
+  background: #fff;
+  color: #6c63ff;
+  font-weight: 700;
 }
-.sidebar {
-  width: 220px;
-  min-width: 220px; /* prevents it from shrinking */
-  flex-shrink: 0;   /* stops it from being squished */
-}
+
 
 .main-content {
   padding: 30px 40px;
