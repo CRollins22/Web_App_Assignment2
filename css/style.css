@@ -123,23 +123,25 @@ img {
 }
 
 .welcome-banner {
-  background: linear-gradient(135deg, #6c63ff 0%, #48cae4 100%);
-  color: #fff;
+  background: #fff;
+  color: #1a1a2e;
   border-radius: 16px;
   padding: 40px;
   margin-bottom: 40px;
+  box-shadow: 0 4px 20px rgba(108,99,255,0.08);
+  min-height: calc(100vh - 100px); /* fills the space */
 }
 
 .welcome-banner h1 {
-  color: #fff;
+  color: #6c63ff;
   font-size: 32px;
 }
 
 .welcome-banner h1::after {
-  background: rgba(255,255,255,0.5);
+  background: linear-gradient(90deg, #f72585, #48cae4);
 }
 
 .welcome-banner p {
-  color: rgba(255,255,255,0.9);
+  color: #3a3a5c;
   font-size: 16px;
 }
