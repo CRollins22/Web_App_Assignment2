@@ -1,17 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Merriweather:ital@0;1&display=swap');
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   display: flex;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4ff;
+  color: #1a1a2e;
+  min-height: 100vh;
 }
 
 .sidebar {
   width: 220px;
+  min-width: 220px;
+  flex-shrink: 0;
   min-height: 100vh;
-  background-color: #1a1a2e;
-  padding: 20px;
+  background: linear-gradient(160deg, #6c63ff, #48cae4);
+  padding: 30px 16px;
   position: sticky;
   top: 0;
+  box-shadow: 4px 0 12px rgba(0,0,0,0.1);
 }
 
 .sidebar h2 {
